@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.2.0.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=.45, maximum-scale=.45, minimum-scale=.45, user-scalable=no, target-densityDpi=device-dpi" />
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery.mobile-1.2.0.min.js"></script>
+<style type="text/css">
+#homeBg {
+  position: absolute;
+  top: 50;
+  left: 50;
+  width: 100%;
+  height: 100%;
+}
+
+#aboutBgs {
+  position: absolute;
+  top: 50;
+  left: 50;
+  width: 100%;
+  height: 100%;
+}
+#helpBgs {
+  position: absolute;
+  top: 50;
+  left: 50;
+  width: 100%;
+  height: 100%;
+}
+</style>
+<script>
+function timer(){
+
+}
+function load(){
+document.getElementById('btn1').style.visibility = 'hidden';
+}
+function save(){
+var getStud1=document.getElementById("stud1").value;
+var getStud2=document.getElementById("stud2").value;
+var getStud3=document.getElementById("stud3").value;
+var getStud4=document.getElementById("stud4").value;
+var getStud5=document.getElementById("stud5").value;
+var getStud6=document.getElementById("stud6").value;
+var getStud7=document.getElementById("stud7").value;
+var getStud8=document.getElementById("stud8").value;
+var getStud9=document.getElementById("stud9").value;
+var getStud10=document.getElementById("stud10").value;
+var getStud11=document.getElementById("stud11").value;
+var getStud12=document.getElementById("stud12").value;
+var getStud13=document.getElementById("stud13").value;
+var getStud14=document.getElementById("stud14").value;
+var getStud15=document.getElementById("stud15").value;
+var getStud16=document.getElementById("stud16").value;
+var getStud17=document.getElementById("stud17").value;
+var getStud18=document.getElementById("stud18").value;
+var getStud19=document.getElementById("stud19").value;
+var getStud20=document.getElementById("stud20").value;
+var getStud21=document.getElementById("stud21").value;
+var getStud22=document.getElementById("stud22").value;
+var getStud23=document.getElementById("stud23").value;
+var getStud24=document.getElementById("stud24").value;
+var getStud25=document.getElementById("stud25").value;
+var getStud26=document.getElementById("stud26").value;
+var getStud27=document.getElementById("stud27").value;
+var getStud28=document.getElementById("stud28").value;
+var getStud29=document.getElementById("stud29").value;
+var getStud30=document.getElementById("stud30").value;
+
+window.localStorage.setItem("stud1",getStud1);
+window.localStorage.setItem("stud2",getStud2);
+window.localStorage.setItem("stud3",getStud3);
+window.localStorage.setItem("stud4",getStud4);
+window.localStorage.setItem("stud5",getStud5);
+window.localStorage.setItem("stud6",getStud6);
+window.localStorage.setItem("stud7",getStud7);
+window.localStorage.setItem("stud8",getStud8);
+window.localStorage.setItem("stud9",getStud9);
+window.localStorage.setItem("stud10",getStud10);
+window.localStorage.setItem("stud11",getStud11);
+window.localStorage.setItem("stud12",getStud12);
+window.localStorage.setItem("stud13",getStud13);
+window.localStorage.setItem("stud14",getStud14);
+window.localStorage.setItem("stud15",getStud15);
+window.localStorage.setItem("stud16",getStud16);
+window.localStorage.setItem("stud17",getStud17);
+window.localStorage.setItem("stud18",getStud18);
+window.localStorage.setItem("stud19",getStud19);
+window.localStorage.setItem("stud20",getStud20);
+window.localStorage.setItem("stud21",getStud21);
+window.localStorage.setItem("stud22",getStud22);
+window.localStorage.setItem("stud23",getStud23);
+window.localStorage.setItem("stud24",getStud24);
+window.localStorage.setItem("stud25",getStud25);
+window.localStorage.setItem("stud26",getStud26);
+window.localStorage.setItem("stud27",getStud27);
+window.localStorage.setItem("stud28",getStud28);
+window.localStorage.setItem("stud29",getStud29);
+window.localStorage.setItem("stud30",getStud30);
+
+
+if(!!getStud1){
+var studGet1=1;
+window.localStorage.setItem("noofStudent1",studGet1);
+var count1=parseInt(window.localStorage.getItem("noofStudent1"));
+}else{
+var studGet1=0;
+window.localStorage.setItem("noofStudent1",studGet1);
+var count1=parseInt(window.localStorage.getItem("noofStudent1"));
+}
+
+if(!!getStud2){
+var studGet2=1;
+window.localStorage.setItem("noofStudent2",studGet2);
+var count2=parseInt(window.localStorage.getItem("noofStudent2"));
+}else{
+var studGet2=0;
+window.localStorage.setItem("noofStudent2",studGet2);
+var count2=parseInt(window.localStorage.getItem("noofStudent2"));
+}
+
+if(!!getStud3){
+var studGet3=1;
+window.localStorage.setItem("noofStudent3",studGet3);
+var count3=parseInt(window.localStorage.getItem("noofStudent3"));
+}else{
+var studGet3=0;
+window.localStorage.setItem("noofStudent3",studGet3);
+var count3=parseInt(window.localStorage.getItem("noofStudent3"));
+}
+
+if(!!getStud4){
+var studGet4=1;
+window.localStorage.setItem("noofStudent4",studGet4);
+var count4=parseInt(window.localStorage.getItem("noofStudent4"));
+}else{
+var studGet4=0;
+window.localStorage.setItem("noofStudent4",studGet4);
+var count5=parseInt(window.localStorage.getItem("noofStudent5"));
+}
+
+if(!!getStud5){
+var studGet5=1;
+window.localStorage.setItem("noofStudent5",studGet5);
+var count5=parseInt(window.localStorage.getItem("noofStudent5"));
+}else{
+var studGet5=0;
+window.localStorage.setItem("noofStudent5",studGet5);
+var count5=parseInt(window.localStorage.getItem("noofStudent5"));
+}
+
+if(!!getStud6){
+var studGet6=1;
+window.localStorage.setItem("noofStudent6",studGet6);
+var count6=parseInt(window.localStorage.getItem("noofStudent6"));
+}else{
+var studGet6=0;
+window.localStorage.setItem("noofStudent6",studGet6);
+var count6=parseInt(window.localStorage.getItem("noofStudent6"));
+}
+
+if(!!getStud7){
+var studGet7=1;
+window.localStorage.setItem("noofStudent7",studGet7);
+var count7=parseInt(window.localStorage.getItem("noofStudent7"));
+}else{
+var studGet7=0;
+window.localStorage.setItem("noofStudent7",studGet7);
+var count7=parseInt(window.localStorage.getItem("noofStudent7"));
+}
+
+if(!!getStud8){
+var studGet8=1;
+window.localStorage.setItem("noofStudent8",studGet8);
+var count8=parseInt(window.localStorage.getItem("noofStudent8"));
+}else{
+var studGet8=0;
+window.localStorage.setItem("noofStudent8",studGet8);
+var count8=parseInt(window.localStorage.getItem("noofStudent8"));
+}
+
+if(!!getStud9){
+var studGet9=1;
+window.localStorage.setItem("noofStudent9",studGet9);
+var count9=parseInt(window.localStorage.getItem("noofStudent9"));
+}else{
+var studGet9=0;
+window.localStorage.setItem("noofStudent9",studGet9);
+var count9=parseInt(window.localStorage.getItem("noofStudent9"));
+}
+
+if(!!getStud10){
+var studGet10=1;
+window.localStorage.setItem("noofStudent10",studGet10);
+var count10=parseInt(window.localStorage.getItem("noofStudent10"));
+}else{
+var studGet10=0;
+window.localStorage.setItem("noofStudent10",studGet10);
+var count10=parseInt(window.localStorage.getItem("noofStudent10"));
+}
+
+if(!!getStud11){
+var studGet11=1;
+window.localStorage.setItem("noofStudent11",studGet11);
+var count11=parseInt(window.localStorage.getItem("noofStudent11"));
+}else{
+var studGet11=0;
+window.localStorage.setItem("noofStudent11",studGet11);
+var count11=parseInt(window.localStorage.getItem("noofStudent11"));
+}
+
+if(!!getStud12){
+var studGet12=1;
+window.localStorage.setItem("noofStudent12",studGet12);
+var count12=parseInt(window.localStorage.getItem("noofStudent12"));
+}else{
+var studGet12=0;
+window.localStorage.setItem("noofStudent12",studGet12);
+var count12=parseInt(window.localStorage.getItem("noofStudent12"));
+}
+
+if(!!getStud13){
+var studGet13=1;
+window.localStorage.setItem("noofStudent13",studGet13);
+var count13=parseInt(window.localStorage.getItem("noofStudent13"));
+}else{
+var studGet13=0;
+window.localStorage.setItem("noofStudent13",studGet13);
+var count13=parseInt(window.localStorage.getItem("noofStudent13"));
+}
+
+if(!!getStud14){
+var studGet14=1;
+window.localStorage.setItem("noofStudent14",studGet14);
+var count14=parseInt(window.localStorage.getItem("noofStudent14"));
+}else{
+var studGet14=0;
+window.localStorage.setItem("noofStudent14",studGet14);
+var count14=parseInt(window.localStorage.getItem("noofStudent14"));
+}
+
+if(!!getStud15){
+var studGet15=1;
+window.localStorage.setItem("noofStudent15",studGet15);
+var count15=parseInt(window.localStorage.getItem("noofStudent15"));
+}else{
+var studGet15=0;
+window.localStorage.setItem("noofStudent15",studGet15);
+var count15=parseInt(window.localStorage.getItem("noofStudent15"));
+}
+
+if(!!getStud16){
+var studGet16=1;
+window.localStorage.setItem("noofStudent16",studGet16);
+var count16=parseInt(window.localStorage.getItem("noofStudent16"));
+}else{
+var studGet16=0;
+window.localStorage.setItem("noofStudent16",studGet16);
+var count16=parseInt(window.localStorage.getItem("noofStudent16"));
+}
+
+if(!!getStud17){
+var studGet17=1;
+window.localStorage.setItem("noofStudent17",studGet17);
+var count17=parseInt(window.localStorage.getItem("noofStudent17"));
+}else{
+var studGet17=0;
+window.localStorage.setItem("noofStudent17",studGet17);
+var count17=parseInt(window.localStorage.getItem("noofStudent17"));
+}
+
+if(!!getStud18){
+var studGet18=1;
+window.localStorage.setItem("noofStudent18",studGet18);
+var count18=parseInt(window.localStorage.getItem("noofStudent18"));
+}else{
+var studGet18=0;
+window.localStorage.setItem("noofStudent18",studGet18);
+var count18=parseInt(window.localStorage.getItem("noofStudent18"));
+}
+
+if(!!getStud19){
+var studGet19=1;
+window.localStorage.setItem("noofStudent19",studGet19);
+var count19=parseInt(window.localStorage.getItem("noofStudent19"));
+}else{
+var studGet19=0;
+window.localStorage.setItem("noofStudent19",studGet19);
+var count19=parseInt(window.localStorage.getItem("noofStudent19"));
+}
+
+if(!!getStud20){
+var studGet20=1;
+window.localStorage.setItem("noofStudent20",studGet20);
+var count20=parseInt(window.localStorage.getItem("noofStudent20"));
+}else{
+var studGet20=0;
+window.localStorage.setItem("noofStudent20",studGet20);
+var count20=parseInt(window.localStorage.getItem("noofStudent20"));
+}
+
+if(!!getStud21){
+var studGet21=1;
+window.localStorage.setItem("noofStudent21",studGet21);
+var count21=parseInt(window.localStorage.getItem("noofStudent21"));
+}else{
+var studGet21=0;
+window.localStorage.setItem("noofStudent21",studGet21);
+var count21=parseInt(window.localStorage.getItem("noofStudent21"));
+}
+
+if(!!getStud22){
+var studGet22=1;
+window.localStorage.setItem("noofStudent22",studGet22);
+var count22=parseInt(window.localStorage.getItem("noofStudent22"));
+}else{
+var studGet22=0;
+window.localStorage.setItem("noofStudent22",studGet22);
+var count22=parseInt(window.localStorage.getItem("noofStudent22"));
+}
+
+if(!!getStud23){
+var studGet23=1;
+window.localStorage.setItem("noofStudent23",studGet23);
+var count23=parseInt(window.localStorage.getItem("noofStudent23"));
+}else{
+var studGet23=0;
+window.localStorage.setItem("noofStudent23",studGet23);
+var count23=parseInt(window.localStorage.getItem("noofStudent23"));
+}
+
+if(!!getStud24){
+var studGet24=1;
+window.localStorage.setItem("noofStudent24",studGet24);
+var count24=parseInt(window.localStorage.getItem("noofStudent24"));
+}else{
+var studGet24=0;
+window.localStorage.setItem("noofStudent24",studGet24);
+var count24=parseInt(window.localStorage.getItem("noofStudent24"));
+}
+
+if(!!getStud25){
+var studGet25=1;
+window.localStorage.setItem("noofStudent25",studGet25);
+var count25=parseInt(window.localStorage.getItem("noofStudent25"));
+}else{
+var studGet25=0;
+window.localStorage.setItem("noofStudent25",studGet25);
+var count25=parseInt(window.localStorage.getItem("noofStudent25"));
+}
+
+if(!!getStud26){
+var studGet26=1;
+window.localStorage.setItem("noofStudent26",studGet26);
+var count26=parseInt(window.localStorage.getItem("noofStudent26"));
+}else{
+var studGet26=0;
+window.localStorage.setItem("noofStudent26",studGet26);
+var count26=parseInt(window.localStorage.getItem("noofStudent26"));
+}
+
+if(!!getStud27){
+var studGet27=1;
+window.localStorage.setItem("noofStudent27",studGet27);
+var count27=parseInt(window.localStorage.getItem("noofStudent27"));
+}else{
+var studGet27=0;
+window.localStorage.setItem("noofStudent27",studGet27);
+var count27=parseInt(window.localStorage.getItem("noofStudent27"));
+}
+
+if(!!getStud28){
+var studGet28=1;
+window.localStorage.setItem("noofStudent28",studGet28);
+var count28=parseInt(window.localStorage.getItem("noofStudent28"));
+}else{
+var studGet28=0;
+window.localStorage.setItem("noofStudent28",studGet28);
+var count28=parseInt(window.localStorage.getItem("noofStudent28"));
+}
+
+if(!!getStud29){
+var studGet29=1;
+window.localStorage.setItem("noofStudent29",studGet29);
+var count29=parseInt(window.localStorage.getItem("noofStudent29"));
+}else{
+var studGet29=0;
+window.localStorage.setItem("noofStudent29",studGet29);
+var count29=parseInt(window.localStorage.getItem("noofStudent29"));
+}
+
+if(!!getStud30){
+var studGet30=1;
+window.localStorage.setItem("noofStudent30",studGet30);
+var count30=parseInt(window.localStorage.getItem("noofStudent30"));
+}else{
+var studGet30=0;
+window.localStorage.setItem("noofStudent30",studGet30);
+var count30=parseInt(window.localStorage.getItem("noofStudent30"));
+}
+var val=4;
+var setTime=setInterval(function time(){
+val=val-1;
+document.getElementById("inter").innerHTML=val;
+
+if(val<=0){
+clearInterval(setTime);
+var getRandom=window.localStorage.getItem("totalStudent");
+var selecting=Math.floor((Math.random()*getRandom)+1);
+var ans=window.localStorage.getItem("stud"+selecting);
+document.getElementById("result").innerHTML=ans;
+document.getElementById("wait").innerHTML="";
+document.getElementById("inter").innerHTML="";
+document.getElementById("dalucky").innerHTML="The Lucky Student is: ";
+document.getElementById('btn1').style.visibility = 'visible';
+}
+},1500);
+
+var totalnumber=count1+count2+count3+count4+count5+count6+count7+count8+count9+count10+count11+count12+count13+count14+count15+count16+count17+count18+count19+count20+count21+count22+count23+count24+count25+count26+count27+count28+count29+count30;
+window.localStorage.setItem("totalStudent",totalnumber);
+
+
+
+}
+
+function reset(){
+document.getElementById("result").innerHTML="";
+}
+</script>
+</head>
+<body onload="load()">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div data-role="page" data-theme="a" id="mainPage">
+<img src="images/homeBg.png" id="homeBg" />
+	<div data-role="header">
+	<a href="#about" data-transition="flip" data-icon="gear">ABOUT</a>
+		<h1>HOME</h1>
+		<a href="#help" data-transition="flip" data-icon="gear">HELP</a>
+	</div>
+	<div data-role="content">
+	<div class="fb-like" data-href="https://www.facebook.com/RandomRecitation?skip_nax_wizard=true" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+	<h1>PLACE BACKGROUND HERE :D</h1>
+	</div>
+	<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+	<ul>
+	<li><a href="#page3" data-transition="flip" >ENTER</a></li>
+	</ul>	
+	</div>
+	</div>
+</div>
+
+<div data-role="page" data-theme="a" id="help">
+<img src="images/helpBg.png" id="helpBgs" />
+	<div data-role="header">
+	<h1>HELP</h1>
+	</div>
+	<div data-role="content">
+	</div>
+	<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+	<ul>
+	<li><a href="#mainPage" data-transition="flip"  data-transition="pop">OK</a></li>
+	</ul>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" data-theme="a" id="about">
+<img src="images/aboutBg.png" id="aboutBgs" />
+	<div data-role="header">
+	<h1>ABOUT</h1>
+	</div>
+	<div data-role="content">
+	</div>
+	<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+	<ul>
+	<li><a href="#mainPage" data-transition="flip"  data-transition="pop">OK</a></li>
+	</ul>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" data-theme="a" id="page3">
+	<div data-role="header">
+	<a href="#mainPage" data-transition="flip">BACK HOME</a>
+		<h1>ADD NAMES</h1>
+	</div>
+	<div data-role="content">
+	<input type="text" placeholder="Enter Name here" id="stud1"/>
+	<input type="text" placeholder="Enter Name here" id="stud2"/>
+	<input type="text" placeholder="Enter Name here" id="stud3"/>
+	<input type="text" placeholder="Enter Name here" id="stud4"/>
+	<input type="text" placeholder="Enter Name here" id="stud5"/>
+	<input type="text" placeholder="Enter Name here" id="stud6"/>
+	<input type="text" placeholder="Enter Name here" id="stud7"/>
+	<input type="text" placeholder="Enter Name here" id="stud8"/>
+	<input type="text" placeholder="Enter Name here" id="stud9"/>
+	<input type="text" placeholder="Enter Name here" id="stud10"/>
+	<input type="text" placeholder="Enter Name here" id="stud11"/>
+	<input type="text" placeholder="Enter Name here" id="stud12"/>
+	<input type="text" placeholder="Enter Name here" id="stud13"/>
+	<input type="text" placeholder="Enter Name here" id="stud14"/>
+	<input type="text" placeholder="Enter Name here" id="stud15"/>
+	<input type="text" placeholder="Enter Name here" id="stud16"/>
+	<input type="text" placeholder="Enter Name here" id="stud17"/>
+	<input type="text" placeholder="Enter Name here" id="stud18"/>
+	<input type="text" placeholder="Enter Name here" id="stud19"/>
+	<input type="text" placeholder="Enter Name here" id="stud20"/>
+	<input type="text" placeholder="Enter Name here" id="stud21"/>
+	<input type="text" placeholder="Enter Name here" id="stud22"/>
+	<input type="text" placeholder="Enter Name here" id="stud23"/>
+	<input type="text" placeholder="Enter Name here" id="stud24"/>
+	<input type="text" placeholder="Enter Name here" id="stud25"/>
+	<input type="text" placeholder="Enter Name here" id="stud26"/>
+	<input type="text" placeholder="Enter Name here" id="stud27"/>
+	<input type="text" placeholder="Enter Name here" id="stud28"/>
+	<input type="text" placeholder="Enter Name here" id="stud29"/>
+	<input type="text" placeholder="Enter Name here" id="stud30"/>
+	</div>
+	<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+	<ul>
+	<li><a href="#dialog" data-transition="flip" data-rel="dialog" onclick="save()" >See the Lucky Student Press here.</a></li>
+	</ul>		
+	</div>
+	</div>
+</div>
+
+<div data-role="popup" id="dialog" data-theme="a" class="ui-corner-all">
+				<div style="padding:20px 30px;">
+				<h1>
+				
+				<h1 id="wait">Wait in . . .</h1><p id="inter">4</p>
+				
+				</h1>
+				<h1 id="dalucky"><h1 id="result"></h1></h1>
+	
+	
+	<a href="#page3" data-transition="flip" id="btn1" onclick="reset()"><input type="button" value="RESET"/></a>
+				</div>
+		</div>
+		
+</body>
+</html>
